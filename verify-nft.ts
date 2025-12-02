@@ -23,9 +23,9 @@ umi.use(keypairIdentity(umiUser));
 
 console.log("Set up Umi instance with user identity")
 
-const collectionAddress = publicKey("F4UqiTQe9srBzuo2P7RcGjk2gJYSAcK1gd5VcY4h9x5v");
+const collectionAddress = publicKey("AtioU7k2dT5dVWYG1vK2w2KP2oEr22HGu5w1NmgqKzd6");
 
-const nftAddress = publicKey("6HBF8HfsdAxw7L5XrtwMGgVXQbzfVDkqwhHo8ctv61wX");
+const nftAddress = publicKey("DKpmpbqkHDnyXCARtnDWXWfZBR1gdvk6BRzexqzECTAf");
 
 const transaction = await verifyCollectionV1(umi, {
     metadata: findMetadataPda(umi, { mint: nftAddress }),

@@ -40,6 +40,8 @@ export https_proxy=http://127.0.0.1:7890
 
 ### 3. 运行脚本
 
+**方式一：分步执行**
+
 ```bash
 # 步骤 1: 创建 Collection
 npx esrun create-collection.ts
@@ -51,18 +53,27 @@ npx esrun create-nft.ts
 npx esrun verify-nft.ts
 ```
 
+**方式二：一键创建并验证（推荐）**
+
+```bash
+# 创建 NFT 并自动验证到 Collection
+npx esrun create-and-verify-nft.ts
+```
+
 ## 文件说明
 
-| 文件                   | 说明                                                |
-| ---------------------- | --------------------------------------------------- |
-| `create-collection.ts` | 创建 NFT 集合                                       |
-| `create-nft.ts`        | 创建单个 NFT 并关联到集合                           |
-| `verify-nft.ts`        | 验证 NFT 属于集合（需要 Collection authority 签名） |
+| 文件                       | 说明                                                |
+| -------------------------- | --------------------------------------------------- |
+| `create-collection.ts`     | 创建 NFT 集合                                       |
+| `create-nft.ts`            | 创建单个 NFT 并关联到集合                           |
+| `verify-nft.ts`            | 验证 NFT 属于集合（需要 Collection authority 签名） |
+| `create-and-verify-nft.ts` | **一键创建 NFT 并验证到集合**                       |
 
 ## 已创建的 NFT
 
-- **Collection**: [F4UqiTQe9srBzuo2P7RcGjk2gJYSAcK1gd5VcY4h9x5v](https://explorer.solana.com/address/F4UqiTQe9srBzuo2P7RcGjk2gJYSAcK1gd5VcY4h9x5v?cluster=devnet)
-- **NFT**: [6HBF8HfsdAxw7L5XrtwMGgVXQbzfVDkqwhHo8ctv61wX](https://explorer.solana.com/address/6HBF8HfsdAxw7L5XrtwMGgVXQbzfVDkqwhHo8ctv61wX?cluster=devnet)
+- **Collection**: [AtioU7k2dT5dVWYG1vK2w2KP2oEr22HGu5w1NmgqKzd6](https://explorer.solana.com/address/AtioU7k2dT5dVWYG1vK2w2KP2oEr22HGu5w1NmgqKzd6?cluster=devnet)
+- **NFT 1 (SunglassesCat)**: [DKpmpbqkHDnyXCARtnDWXWfZBR1gdvk6BRzexqzECTAf](https://explorer.solana.com/address/DKpmpbqkHDnyXCARtnDWXWfZBR1gdvk6BRzexqzECTAf?cluster=devnet)
+- **NFT 2 (PirateCat)**: [ChH6Ew8RvTbDnod7dfsYMzu8Fw3FKjAjPaZvcgD9QZWi](https://explorer.solana.com/address/ChH6Ew8RvTbDnod7dfsYMzu8Fw3FKjAjPaZvcgD9QZWi?cluster=devnet)
 
 ## 元数据格式
 
